@@ -11,6 +11,14 @@
   padding-bottom: 40px;
 }
 
+.center-column {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
 .accent-text {
   color: $accent-color;
 }
