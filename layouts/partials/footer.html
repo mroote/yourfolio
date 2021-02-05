@@ -1,0 +1,13 @@
+{{- define "footer" -}}
+<div class="container">
+    <div class="center">
+        {{- range .Site.Menus.external -}}
+        <div class="padder">
+            <a href="{{ .URL }}" target="_blank">
+            {{ .Pre }}
+            </a>
+        </div>
+        {{- end -}}
+    </div>
+</div>
+{{- end -}}

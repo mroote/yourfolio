@@ -4,13 +4,7 @@
   {{- partial "header" . -}}
   <div class="container">
     <div class="padder">
-      {{- partial "modules/text-groups" . -}}
-      {{- partial "modules/projects" . -}}
-    </div>
-  </div>
-  <div class="container">
-    <div class="center">
-      {{- partial "footer" -}}
+        {{ .Content }}
     </div>
   </div>
 </div>

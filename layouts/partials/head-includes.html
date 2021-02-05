@@ -1,6 +1,6 @@
 {{with partial "funcs/GetCSS.html" (dict "sourcePath" "scss/critical.scss" "enableSourceMap" false)}}
 <style>
-  {{.Content | safeCSS}}
+  {{ .Content | safeCSS }}
 </style>
 {{end}}
 {{with partial "funcs/GetCSS.html" (dict "sourcePath" "scss/app.scss" "outputPath" "css/app.css")}}
@@ -12,3 +12,4 @@
   document.createElement("picture");
 </script>
 <script src="https://cdn.jsdelivr.net/picturefill/3.0.2/picturefill.min.js" async></script>
+<script src="https://unpkg.com/feather-icons"></script>

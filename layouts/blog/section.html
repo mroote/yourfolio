@@ -1,0 +1,22 @@
+{{- define "main" -}}
+<div class="main-container">
+  {{- partial "navigation" . -}}
+  {{- partial "header" . -}}
+  <div class="container">
+    <div class="padder">
+    <main>
+        {{ .Content }}
+            <ul class="contents">
+            {{ range .Paginator.Pages }}
+                <li>{{.Title}}
+                    <div>
+                      {{ .Date }}
+                    </div>
+                </li>
+            {{ end }}
+            </ul>
+    </main>
+    </div>
+  </div>
+</div>
+{{- end -}}

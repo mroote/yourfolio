@@ -4,3 +4,6 @@
 {{$js = $js | minify | fingerprint}}
 {{end}}
 <script src="{{$js.RelPermalink}}"></script>
+<script type="text/javascript">
+    feather.replace()
+</script>
